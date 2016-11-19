@@ -2,11 +2,11 @@ from __future__ import unicode_literals
 import requests
 
 def ping_services(event, context):
-    url_list = [
-        'https://novaservice?wsdl',
-        'https://PaymentWebService?wsdl',
-        'https://transfersService?WSDL'
-    ]
+    url_list = {
+        'nova' : 'https://novaservice?wsdl',
+        'payments' : 'https://PaymentWebService?wsdl',
+        'transfers' : 'https://transfersService?WSDL'
+    }
     url_list.update()
     
     for u in url_list:
