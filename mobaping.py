@@ -3,7 +3,7 @@ import requests
 
 def ping_services(event, context):
     url_list = {
-        "payments" : "https://autoeuropepayments.novacarhire.com:8443/Mobacar/services/PaymentWebService?wsdl"
+        "payments" : "https://google.ie"
     }
     url_list.update(event)
 
